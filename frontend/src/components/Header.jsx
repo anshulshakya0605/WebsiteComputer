@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
     <div className='p-10 '>
-    <img src={banner} className='w-[100%] rounded-2xl' alt="banner" />
+    <img src={banner} className='w-[100%] rounded-2xl shadow-xl' alt="banner" />
     </div>
     </>
   )
