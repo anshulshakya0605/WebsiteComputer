@@ -7,7 +7,7 @@ function FounderSMS() {
 
     return (
         <>
-            <div className='flex flex-col md:flex-row items-center justify-between px-6 lg:px-20 lg:py-16 gap-8'>
+            <div className='flex flex-col md:flex-row items-center justify-between px-6 lg:px-20 py-6 lg:py-16 gap-8'>
                 <div className='w-full md:w-1/2 flex items-center justify-center'>
                     <div>
                         <h1 className='text-orange-700 font-bold text-2xl mb-3'>Founder Message</h1>
@@ -33,21 +33,17 @@ function FounderSMS() {
             </div>
 
             {/* co-founder message  */}
-            
+
             <div className='flex flex-col md:flex-row items-center justify-between px-6 lg:px-20 lg:py-16 gap-8'>
-                <div className='w-full md:w-1/2 flex items-center justify-center'>
+
+                <div className='w-full md:w-1/2 flex items-center justify-center order-2 md:order-1'>
                     <img src={CoFounderImg} alt="image" className='w-[70%] mt-5 mb-5 md:mb-0 rounded-xl shadow-xl hover:shadow-blue-400 hover:shadow-2xl cursor-pointer hover:scale-90 duration-500' />
                 </div>
-                <div className='w-full md:w-1/2 flex items-center justify-center'>
+
+                <div className='w-full md:w-1/2 flex items-center justify-center order-1'>
                     <div>
                         <h1 className='text-orange-700 font-bold text-2xl mb-3'>Co-Founder Message</h1>
-                        <h3 className='text-xl font-semibold mb-3 uppercase'>Mr. Anshul <span> <ReactTyped
-                            className='text-orange-700'
-                            strings={['SHAKYA', 'KUMAR']}
-                            typeSpeed={70}
-                            backSpeed={80}
-                            loop={true}
-                        /> </span> </h3>
+                        <h3 className='text-2xl font-semibold mb-3'>Mr. Anshul Shakya</h3>
                         <h3 className='text-2xl font-semibold mb-3'>He is a Software<span> <ReactTyped
                             className='text-orange-700'
                             strings={['Developer', 'Engineer', 'Designer', 'Coder']}

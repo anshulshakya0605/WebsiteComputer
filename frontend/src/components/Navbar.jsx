@@ -22,13 +22,13 @@ function Navbar() {
         <div className='hidden md:flex items-center justify-between gap-8'>
           <NavLink to='/' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`}>Home</NavLink>
 
-          <NavLink to='/about' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`}>About</NavLink>
+          <NavLink to='/about' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'} hover:text-orange-700`}>About</NavLink>
 
-          <NavLink to='/course' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`}>Courses</NavLink>
+          <NavLink to='/course' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'} hover:text-orange-700`}>Courses</NavLink>
 
-          <NavLink to='/gallery' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`}>Gallery</NavLink>
+          <NavLink to='/gallery' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'} hover:text-orange-700`}>Gallery</NavLink>
 
-          <NavLink to='/contact' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`}>Contact</NavLink>
+          <NavLink to='/contact' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'} hover:text-orange-700`}>Contact</NavLink>
 
           <div className='hidden lg:flex p-1 w-full rounded-md shadow border focus-within:ring-1 focus-within:border-blue-300  items-center justify-between'>
             <input type="text" placeholder='Search here...' className='outline-none bg-transparent' />
@@ -50,7 +50,7 @@ function Navbar() {
         <div className='md:hidden bg-slate-100 space-y-3 px-6'>
           <NavLink to='/' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`} onClick={closeMobileMenu}>Home</NavLink>
           <NavLink to='/about' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`} onClick={closeMobileMenu}>About</NavLink>
-          <NavLink to='/courses' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`} onClick={closeMobileMenu}>Courses</NavLink>
+          <NavLink to='/course' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`} onClick={closeMobileMenu}>Courses</NavLink>
           <NavLink to='/gallery' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`} onClick={closeMobileMenu}>Gallery</NavLink>
           <NavLink to='/contact' className={({ isActive }) => `block font-semibold hover:underline duration-200 ${isActive ? 'text-orange-700' : 'text-black'}`} onClick={closeMobileMenu}>Contact</NavLink>
 
