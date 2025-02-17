@@ -38,7 +38,7 @@ const DataApi = [
   },
   {
     "name": "Transactions Allowed in a Linear Line Yard",
-    "fees": 6000,
+    "fees": 5000,
     "image": tally,
     "minimum_pay": 1000,
     "duration":3
