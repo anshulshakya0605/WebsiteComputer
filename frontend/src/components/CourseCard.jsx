@@ -18,8 +18,8 @@ function CourseCard({item}) {
 
             <div className='bg-orange-100 absolute bottom-0 w-full h-10 rounded-b-md'>
                 <div className='px-5 flex items-center justify-between pt-1'>
-                <button className='text-xl font-semibold'>Enquiry</button>
-                <button className='text-xl font-semibold'>Details</button>
+                <button className='text-xl font-semibold'><a href="tel:+91-9548769563">Enquiry</a></button>
+                <button className='text-xl font-semibold'><a href="https://wa.me/9548769563/?text=Hi">Details</a></button>
                 </div>
             </div>
 

@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { Link, useNavigate,} from 'react-router-dom'
 
+
 function Login() {
   
   const [email, setEmail] = useState('')
@@ -23,8 +24,8 @@ function Login() {
   } 
 
   return (
-   <div className='flex items-center justify-center min-h-screen'>
-    <div className='bg-slate-100 p-8  rounded-lg w-full max-w-sm shadow-lg dark:text-gray-800'>
+   <div className='flex items-center justify-center my-11'>
+    <div className='bg-slate-100 p-8 rounded-lg w-full max-w-sm shadow-lg dark:text-gray-800'>
       <h1 className='text-2xl font-semibold text-center text-gray-800 mb-6'>Login</h1>
        
        <form onSubmit={handleSubmit} >
@@ -56,7 +57,7 @@ function Login() {
           
         </div>
           <button type='submit' className='bg-pink-600 text-white py-2 w-1/3 mt-2 rounded-lg hover:bg-pink-700 hover:scale-95 duration-300'>Login</button>
-
+            { error && <p className='mt-4 text-red-500'> {error} </p>}
           <p className='mt-4'>You don't have account? {" "} <Link to='/register' className='text-pink-500 hover:underline' >Register</Link> </p>
        </form>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import axios from 'axios'
 function Register() {
 
@@ -14,6 +14,7 @@ function Register() {
         try {
             const response = await axios.post('http://localhost:9001/auth/register', {username, email, password});
             console.log(response.data);
+            Navigate('/login')
         }
         catch (err) {
             setError(err.response ? err.response.data.message: "Server error")
